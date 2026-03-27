@@ -1,0 +1,9 @@
+Proceso Calcular_Hipotenusa
+Definir base, altura, hipotenusa Como Real    
+Escribir "Ingrese la base:"
+Leer base    
+Escribir "Ingrese la altura:"
+Leer altura    
+hipotenusa <- RC(base^2 + altura^2)    
+Escribir "La hipotenusa es: ", hipotenusa
+FinProceso
