@@ -1,0 +1,37 @@
+Algoritmo PrimosHastaN
+
+    Definir limite, numero, i Como Entero
+    Definir esPrimo Como Logico
+    Definir contador Como Entero
+
+    Escribir "Ingrese el límite superior:"
+    Leer limite
+
+    Escribir "Números primos del 2 hasta ", limite, ":"
+    Escribir "----------------------------"
+
+    contador <- 0
+
+    Para numero <- 2 Hasta limite Hacer
+
+        esPrimo <- Verdadero
+        i <- 2
+
+        Mientras i <= raiz(numero) Y esPrimo = Verdadero Hacer
+            Si numero mod i = 0 Entonces
+                esPrimo <- Falso
+            FinSi
+            i <- i + 1
+        FinMientras
+
+        Si esPrimo = Verdadero Entonces
+            Escribir "  -> ", numero
+            contador <- contador + 1
+        FinSi
+
+    FinPara
+
+    Escribir "----------------------------"
+    Escribir "Total de primos encontrados: ", contador
+
+FinAlgoritmo
